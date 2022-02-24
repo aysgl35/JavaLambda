@@ -20,6 +20,7 @@ public class ArrayLambda {
         for (int i = 0; i < arrBoyutu; i++) {
             System.out.println("Arrayin " + (i + 1) + ". elemanini giriniz");
             arr[i] = scan.nextInt();
+
         }
         System.out.println(Arrays.stream(arr).sorted().filter(t -> t < arr[1] || t > arr[arr.length - 2]).reduce((t, u) -> t - u));
     }
